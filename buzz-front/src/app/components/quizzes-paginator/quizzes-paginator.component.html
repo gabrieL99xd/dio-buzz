@@ -1,0 +1,14 @@
+<div class="quizzes-container">
+    <div  class="quizz" *ngFor="let quizz of paginatedList.slice((currentPage - 1) * itemPerPage, currentPage * itemPerPage)" >
+        <h2 class="quizz-title"><a  class="quizz-link" [routerLink]="['/quizz', quizz.Id]">{{quizz.title}}</a></h2>
+        <p class="quizz-description"><a class="quizz-link" [routerLink]="['/quizz', quizz.Id]">{{quizz.description}}</a></p>
+    </div>
+    <div *ngIf="paginatedList.length > 5" class="btn-pag">
+        <button class="action-btn" (click)="firstPage()" [disabled]="currentPage === 1">&lt;&lt;</button>
+        <button class="action-btn" (click)="prevPage()" [disabled]="currentPage === 1">&lt;</button>
+        <button *ngFor="let page of visiblePages" (click)="goToPage(page)" [ngClass]="{'pg-number': true, 'selected-page': page == currentPage}">{{page}}</button>
+        <button class="action-btn" (click)="nextPage()" [disabled]="currentPage === totalPages">&gt;</button>
+        <button class="action-btn" (click)="lastPage()" [disabled]="currentPage === totalPages">&gt;&gt;</button>
+    </div>
+    <p *ngIf="paginatedList.length > 5">Qtd total de páginas: {{pages.length}} , quizz por páginas : {{itemPerPage}}</p>
+</div>

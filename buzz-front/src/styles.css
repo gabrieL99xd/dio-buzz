@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    border:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    background-color: #1f1147;
+}
+
+body.popup-active {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  body.popup-active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }

@@ -1,0 +1,17 @@
+<div class="quizz-container">
+    <div class="quizz-question-container" *ngFor="let question of Quizz.questions">
+        <div class="quizz-questions">
+            <h2>Questão: {{question.questionDescription}}</h2>
+        </div>
+        <div class="quizz-options" [class.disabled]="question.clicked">
+            <button (click)="alternativaEscolhida(question,alternativa)" 
+                class="btn-option"
+                [class.selected] = "alternativa.isSelected" 
+                [class.correta]="alternativa.isCorrect && question.clicked"
+                [class.incorreta]="!alternativa.isCorrect && question.clicked" 
+                *ngFor="let alternativa of question.alternatives; let i = index">
+                {{i+1}} : {{alternativa.alternativeDescription}}
+            </button>
+        </div>
+    </div>
+</div>

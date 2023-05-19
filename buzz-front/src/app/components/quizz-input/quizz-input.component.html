@@ -1,0 +1,32 @@
+<form>
+    <div class="input-container">
+        <div class="quizz-input-title">
+            <label for="title">Título:</label>
+            <input name="title" id="title" maxlength="40" placeholder="Digite o título do quizz" [(ngModel)]="quizz.title" >
+        </div>
+        <div class="quizz-input-description">
+            <label for="description">Descrição:</label>
+            <textarea  [(ngModel)]="quizz.description" id="description" name="description" maxlength="150" placeholder="Digite a descrição do quizz" ></textarea>
+        </div>
+        <div class="quizz-input-questions">
+            <div class="quizz-questions-top">
+                <p>Questões:</p>
+                <button (click)="AddQuestion()" class="add-btn">+ Questão</button>
+            </div>
+            <div>
+                <app-question-input [quizz]="quizz"></app-question-input>
+            </div>
+        </div>
+        <div class="submitButton">
+            <button class="Finalizar" (click)="Save()">Ok</button>
+        </div>
+    </div>
+</form>
+<div *ngIf="showMsg" class="pop">
+    <p >{{msg}}</p>
+    <button (click)="closePopup()" >Ok</button>
+</div>
+<div *ngIf="loading" class="loading">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+

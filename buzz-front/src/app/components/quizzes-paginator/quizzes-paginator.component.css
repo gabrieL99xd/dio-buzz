@@ -1,0 +1,86 @@
+.quizzes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(236, 200, 200, 0.11);
+    border-radius: 20px;
+    font-size: 24px;
+    min-height: 600px;
+}
+
+.quizz{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: center;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.quizz:hover{
+    opacity: 1.1;
+    cursor: pointer;
+    background-color: rgba(236, 200, 200, 0.3);
+}
+
+.quizz-title{
+    margin: 10px;
+    font-size:36px;
+}
+
+
+.quizz-description{
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.quizz-link{
+    color:antiquewhite;
+}
+
+.btn-pag{
+    display: flex;
+    flex-direction: row;
+}
+
+.action-btn{
+    width: 60px;
+    padding: 10px;
+    color: antiquewhite;
+    background-color: rgba(236, 200, 200, 0.11);
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.action-btn:hover{
+    background-color: rgba(236, 200, 200, 0.3);
+    cursor: pointer;
+}
+
+.action-btn:hover , .pg-number:hover{
+    transform: scale(1.15); 
+    transition: transform 0.3s ease;
+}
+
+.pg-number{
+    background-color: antiquewhite;
+    color: purple;
+    width: 40px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.selected-page{
+    background-color: purple;
+    color: white;
+  
+}
+
+button[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }

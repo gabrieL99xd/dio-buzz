@@ -1,0 +1,117 @@
+.question-container{
+    background-color: whitesmoke;
+    color: black;
+    min-height: 300px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.questao{
+    display: flex;
+    padding: 10px 5px;
+    background-color: rgb(221, 209, 209);
+    border-bottom: 1px solid rgba(39, 37, 37, 0.61);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.questao-input{
+    font-size: 24px;
+    width: 100%;
+}
+
+.questao-input > input{
+    min-height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 0px 5px;
+}
+
+
+.questao-btn-add{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.questao-btn-add > button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.questao-btn-add > .exclude-btn{
+    padding: 20px;
+    background-color: red;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.questao-btn-add > .exclude-btn > button{
+    line-height: 25px;
+}
+
+.questao-btn-add > button:hover{
+    background-color: rgb(21, 167, 21);
+}
+
+.questao-btn-add > .exclude-btn:hover{
+    background-color: rgb(214, 37, 37);
+}
+
+
+.alternativas{
+    display: flex;
+    border-bottom: .5px solid rgba(39, 37, 37, 0.61);
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alternativa-nome{
+    width: 60%;
+}
+
+.alternativa-nome > input{
+    width: 70%;
+    margin-left: 5px;
+    min-height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+.alternativa-detalhes{
+    display: flex;
+    align-items: center;
+}
+
+.alternativa-escolha > label{
+    margin-right: 5px;
+}
+
+.alternativa-escolha > input{
+    cursor: pointer;
+}
+
+.exclude-btn{
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: inherit;
+    padding: 10px;
+    background-color: red;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.exclude-btn:hover{
+    background-color: rgb(214, 37, 37);
+}

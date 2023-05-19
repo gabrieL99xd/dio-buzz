@@ -1,0 +1,10 @@
+<div class="menu-container">
+    <div class="menu-logo">
+        <img src="../../../assets/imgs/b.png" alt="" srcset="">
+    </div>
+    <div class="menu-links">
+        <nav class="links">
+            <a *ngFor="let option of menuOptions" [routerLink]="option.link" [class.hide]="option.active">{{option.label}}</a>
+        </nav>
+    </div>
+</div>

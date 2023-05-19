@@ -1,0 +1,242 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.quizz-input-title{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quizz-input-title > label{
+    margin-bottom: 20px;
+}
+
+.quizz-input-title > input{
+    width: 50%;
+    min-height: 80px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.quizz-input-description{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quizz-input-description > label{
+    margin: 10px 0px;
+}
+.quizz-input-description > textarea{
+    margin: 15px 0px;
+    margin-left: 5px;
+    width: 100%;
+    padding: 10px;
+    min-height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+    resize: none;
+}
+
+.quizz-input-questions{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 2px solid white;
+    padding: 30px 0px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.quizz-input-questions > div{
+    margin: 10px 20px;
+}
+
+.quizz-questions-top{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.quizz-questions-top > button{
+    background-color: green;
+    font-size: 26px;
+    color: inherit;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.quizz-questions-top > button:hover{
+    cursor: pointer;
+    background-color:rgb(21, 167, 21);
+}
+
+.submitButton{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Finalizar{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.Finalizar:hover{
+    background-color: rgb(21, 167, 21);
+}
+
+.pop{
+    background-color: crimson;
+    min-height: 600px;
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-left: -300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -300px;
+}
+
+.pop > p{
+    margin-top: 20px;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+.pop > button{
+    margin-top: auto;
+    width: 30%;
+    background-color: white;
+    color: crimson;
+    font-size: 16px;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.pop > button:hover{
+    border: 1px solid crimson;
+    transform: scale(1.05);
+}
+
+.loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    margin-left: -40px;
+    margin-top:-40px;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

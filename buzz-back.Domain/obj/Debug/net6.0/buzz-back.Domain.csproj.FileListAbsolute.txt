@@ -1,0 +1,12 @@
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\bin\Debug\net6.0\buzz-back.Domain.deps.json
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\bin\Debug\net6.0\buzz-back.Domain.dll
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\bin\Debug\net6.0\buzz-back.Domain.pdb
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.csproj.AssemblyReference.cache
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.AssemblyInfoInputs.cache
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.AssemblyInfo.cs
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.csproj.CoreCompileInputs.cache
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.dll
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\refint\buzz-back.Domain.dll
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\buzz-back.Domain.pdb
+C:\Front-end\angular-treino\projeto-treino\buzz-back.Domain\obj\Debug\net6.0\ref\buzz-back.Domain.dll

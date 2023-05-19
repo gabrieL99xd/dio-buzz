@@ -1,0 +1,40 @@
+.menu-container{
+    height: 7vh;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    margin:5px 20px;
+    padding-bottom: 5px;
+}
+
+.menu-logo > img{
+    width: 60px;
+}
+
+.links{
+    margin: 0px 50px;
+}
+
+.links > a {
+    padding: 0 10px;
+    margin:0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+    font-size: 28px;
+    cursor: pointer;
+    background-color: white;
+    color: purple; 
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    color: inherit;
+}

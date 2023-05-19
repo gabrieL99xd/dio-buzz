@@ -1,0 +1,31 @@
+<div class="question-container">
+    <form>
+        <div class="questoes" *ngFor="let questao of quizz.questions;let i = index">
+            <div class="questao">
+                <div class="questao-input">
+                    <label for="questao-nome">Questão:</label>
+                    <input [(ngModel)]="questao.questionDescription" id="questao-nome" name="questao-nome" value={{questao.questionDescription}}>
+                </div>
+                <div class="questao-btn-add">
+                    <button class="exclude-btn" (click)="rmvQuestao(questao , i)">Excluir</button>
+                    <button (click)="addAlternativa(questao)">+ Alternativas</button>
+                </div>
+            </div>
+            <div class="alternativas" *ngFor="let alternativa of questao.alternatives; let indexAlt = index">
+                <div class="alternativa-nome">
+                    <label for="alternativa-nome">Alternativa:</label>
+                    <input id="alternativa-nome" name="alternativa-nome" [(ngModel)]="alternativa.alternativeDescription" >
+                </div>
+                <div class="alternativa-detalhes">
+                    <div class="alternativa-escolha">
+                        <label for={{i}}>correta:</label>
+                        <input id={{i}} type = "radio" name={{i}}  [checked]="alternativa.isCorrect" (click)="selecionarAlternativa(questao, indexAlt)" >
+                    </div>
+                    <button class="exclude-btn" (click)="rmvAlternativa(questao , indexAlt)">
+                        Excluir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

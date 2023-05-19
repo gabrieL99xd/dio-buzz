@@ -1,0 +1,158 @@
+.quizz-title{
+    text-align: center;
+    font-size: 4em;
+    margin: 60px 0;
+}
+
+.quizz-management-container{
+    width: 90%;
+    min-height: 400px;
+    padding-bottom: 20px;
+    background-color: rgba(236, 200, 200, 0.3);
+    border-radius: 10px;
+    margin:10px auto;
+}
+
+
+.action-btns{
+    display: flex;
+    justify-content: flex-end;
+    width: 97%;
+}
+
+.action-btns > button {
+    background-color:rgba(236, 200, 200, 0.3);
+    cursor: pointer;
+    margin: 0px 10px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.action-btns > button > svg{
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.action-btns > button:hover{
+    transform: scale(1.1);
+}
+
+.action-btns > button :active{
+    opacity: 0.8;
+}
+
+.add-btn > svg{
+    color: green;
+    border-color: green;
+    background-color: white;
+}
+
+.quizz-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 32px;
+}
+
+.quizz-list-item{
+    width: 95%;
+}
+
+.quizz-item{
+    background-color:  rgba(236, 200, 200, 0.438);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 2px 0px 0px 0px;
+    position: relative;
+}
+
+.quizz-item:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(80, 20, 136);
+}
+
+.quizz-item > input {
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.exclude-btn{
+    position: absolute;
+    padding: 10px;
+    left: 50px;
+    top: 5px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exclude-btn:hover{
+    background-color: crimson;
+}
+
+.btn-arrow{
+    position: absolute;
+    top:20%;
+    right:60px;
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    border-radius: 20px;
+    height: 40px;
+    transition: 0.3s all;
+    transform: scaleY(1);
+}
+
+.btn-arrow:hover{
+    opacity: 0.9;
+    top:15%;
+    background-color: whitesmoke;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+}
+
+.quizz-input{
+    width: 100%;
+    background-color: #1f1147;;
+    min-height: 300px;
+}
+
+.inverted{
+    transform: scaleY(-1);
+}
+
+.selecionada{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(80, 20, 136);
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    cursor: none;
+    pointer-events: none;
+  }

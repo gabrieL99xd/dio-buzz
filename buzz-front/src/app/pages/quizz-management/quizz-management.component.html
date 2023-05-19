@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+<h1 class="quizz-title">Oficina de quizz</h1>
+<div class="quizz-management-container">
+    <div class="action-btns">
+        <button (click)="AddQuizz()" [disabled]="addBtn.Add" class="add-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+          </svg>
+        </button>
+
+    </div>
+    <div class="quizz-list">
+        <div class="quizz-list-item" *ngFor="let quizz of quizzList; let i = index">
+            <div class="quizz-item" [class.selecionada]="quizz.isOpen" >
+                <p>{{quizz.title}}</p>
+                <button class="btn-arrow" *ngIf="!addBtn.Add" (click)="openOrHide(quizz) " [class.inverted]="quizz.isOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </button>
+                <button (click)="removeQuizz(i)" class="exclude-btn">Remover</button>
+            </div>
+            <div *ngIf="quizz.isOpen" class="quizz-input" >
+              <app-quizz-input [quizz]="quizz" [addBtn]="addBtn"></app-quizz-input>
+            </div>
+        </div>
+    </div>
+</div>
+
+
